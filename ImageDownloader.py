@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # ============================================================
-# Dark Aesthetic Image Downloader GUI
-# DuckDuckGo + Bing (Stable, No Google)
+# Image Downloader GUI
+# DuckDuckGo + Bing (Stable)
+# by AiDevSurya
 # ============================================================
 
 import os
@@ -18,6 +19,7 @@ BG_COLOR   = "#0f172a"
 FG_COLOR   = "#e5e7eb"
 ACCENT     = "#38bdf8"
 ENTRY_BG   = "#020617"
+SUBTEXT    = "#64748b"
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 TIMEOUT = 10
@@ -94,7 +96,7 @@ class ImageDownloaderApp:
             background=ACCENT
         )
 
-        # 🔥 Dropdown list styling (THIS fixes ugly dropdown)
+        # Dropdown list styling
         self.root.option_add("*TCombobox*Listbox.background", ENTRY_BG)
         self.root.option_add("*TCombobox*Listbox.foreground", FG_COLOR)
         self.root.option_add("*TCombobox*Listbox.selectBackground", ACCENT)
@@ -123,13 +125,25 @@ class ImageDownloaderApp:
         frame = tk.Frame(self.root, bg=BG_COLOR, padx=30, pady=25)
         frame.pack(fill="both", expand=True)
 
+        # -------- TITLE ----------
+        title_frame = tk.Frame(frame, bg=BG_COLOR)
+        title_frame.pack(anchor="w", pady=(0, 25))
+
         tk.Label(
-            frame,
+            title_frame,
             text="Image Downloader",
             font=("Segoe UI", 20, "bold"),
             bg=BG_COLOR,
             fg=ACCENT
-        ).pack(pady=(0, 25))
+        ).pack(anchor="w")
+
+        tk.Label(
+            title_frame,
+            text="by AiDevSurya",
+            font=("Segoe UI", 10),
+            bg=BG_COLOR,
+            fg=SUBTEXT
+        ).pack(anchor="w", pady=(2, 0))
 
         # Keywords
         r = self.row(frame, "Search Keywords")
