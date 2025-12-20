@@ -93,7 +93,7 @@ Images will be saved to:
 
 <output_folder>/<search_keywords>/
 
-📁 Project Structure
+## 📁 Project Structure
 image-downloader-gui/
 ├── img_downloader_gui.py
 ├── requirements.txt
@@ -101,7 +101,7 @@ image-downloader-gui/
 └── images/
     └── example_keyword/
 
-📄 requirements.txt
+## 📄 requirements.txt
 duckduckgo-search>=5.3.0
 requests>=2.31.0
 tqdm>=4.66.0
@@ -134,7 +134,7 @@ ML experiments
 
 Research collections
 
-🧠 Use Cases
+## 🧠 Use Cases
 
 AI / ML dataset creation
 
@@ -146,7 +146,7 @@ Educational use
 
 Bulk image collection
 
-🔒 Stability & Safety
+## 🔒 Stability & Safety
 
 No API keys required
 
@@ -158,7 +158,7 @@ No dependency conflicts
 
 Safe for repeated use
 
-🚀 Future Improvements (Optional)
+## 🚀 Future Improvements (Optional)
 
 Image preview grid
 
@@ -172,7 +172,7 @@ Dataset export (YOLO / COCO)
 
 Windows .exe / Linux .AppImage
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -184,17 +184,17 @@ Commit changes
 
 Open a pull request
 
-📜 License
+## 📜 License
 
 MIT License
 Free to use, modify, and distribute.
 
-⭐ Support
+## ⭐ Support
 
 If this project helped you:
-
+## 
 ⭐ Star the repository
 
-🐛 Report issues
+## 🐛 Report issues
 
-💡 Suggest features
+## 💡 Suggest features
