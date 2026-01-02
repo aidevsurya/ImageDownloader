@@ -12,7 +12,7 @@ import requests
 from urllib.parse import urlparse
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 
 # ---------------- THEME ----------------
 BG_COLOR   = "#0f172a"
@@ -56,7 +56,7 @@ class ImageDownloaderApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Image Downloader")
-        self.root.geometry("780x420")
+        self.root.geometry("780x460")
         self.root.configure(bg=BG_COLOR)
 
         self.setup_style()
